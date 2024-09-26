@@ -12,6 +12,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  *
@@ -62,6 +63,18 @@ public class SolutionDay1 extends HttpServlet {
             case "1":
                 request.getRequestDispatcher("Day1/Asgm1.jsp").forward(request, response);
                 break;
+            case "2":
+                request.getRequestDispatcher("Day1/Asgm2.jsp").forward(request, response);
+                break;
+            case "3":
+                request.getRequestDispatcher("Day1/Asgm3.jsp").forward(request, response);
+                break;
+            case "4":
+                request.getRequestDispatcher("Day1/Asgm4.jsp").forward(request, response);
+                break;
+            case "5":
+                request.getRequestDispatcher("Day1/Asgm5.jsp").forward(request, response);
+                break;
             default:
                 throw new AssertionError();
         }
@@ -81,7 +94,19 @@ public class SolutionDay1 extends HttpServlet {
         String n = request.getParameter("asgm");
         switch (n) {
             case "1":
-                day1Asgm1(request,response);
+                day1Asgm1(request, response);
+                break;
+            case "2":
+                day1Asgm2(request, response);
+                break;
+            case "3":
+                day1Asgm3(request, response);
+                break;
+            case "4":
+                day1Asgm4(request, response);
+                break;
+            case "5":
+                day1Asgm5(request, response);
                 break;
             default:
                 throw new AssertionError();
@@ -103,35 +128,64 @@ public class SolutionDay1 extends HttpServlet {
         String coef = request.getParameter("a");
         String exp = request.getParameter("b");
         String lim = request.getParameter("limits");
-        
+
         String[] coefs = coef.split(" ");
         String[] exps = exp.split(" ");
         String[] lims = lim.split(" ");
-        
+
         int[] coefss = new int[coefs.length];
         int[] expss = new int[exps.length];
         int[] limss = new int[lims.length];
-        
+
         for (int i = 0; i < coefs.length; i++) {
             coefss[i] = Integer.parseInt(coefs[i]);
         }
-        
+
         for (int i = 0; i < exps.length; i++) {
             expss[i] = Integer.parseInt(exps[i]);
         }
-        
+
         for (int i = 0; i < lims.length; i++) {
             limss[i] = Integer.parseInt(lims[i]);
         }
-        
+
         int[][] arr = {coefss, expss, limss};
-        
-        double S =  ((double)Math.round(A(arr)*100) / 100);
-        double V = ((double)Math.round(V(arr)*100) / 100);
-        
+
+        double S = ((double) Math.round(A(arr) * 100) / 100);
+        double V = ((double) Math.round(V(arr) * 100) / 100);
+
         request.setAttribute("S", S);
         request.setAttribute("V", V);
         request.getRequestDispatcher("Day1/Asgm1.jsp").forward(request, response);
+    }
+
+    private void day1Asgm2(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String s = request.getParameter("str");
+        s = Asgm2.a(s);
+        request.setAttribute("rs", s);
+        request.getRequestDispatcher("Day1/Asgm2.jsp").forward(request, response);
+    }
+
+    private void day1Asgm3(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String num = request.getParameter("num");
+        String rep = request.getParameter("rep");
+        int rs = Asgm3.myNum(Integer.parseInt(num), Integer.parseInt(rep));
+        request.setAttribute("rs", rs);
+        request.getRequestDispatcher("Day1/Asgm3.jsp").forward(request, response);
+    }
+
+    private void day1Asgm4(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String num = request.getParameter("num");
+        List<String> rs = Asgm4.myPascalTriangle(Integer.parseInt(num));
+        request.setAttribute("rs", rs);
+        request.getRequestDispatcher("Day1/Asgm4.jsp").forward(request, response);
+    }
+
+    private void day1Asgm5(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String num = request.getParameter("num");
+        boolean c = Asgm5.isFullOfColors(num);
+        request.setAttribute("rs", c);
+        request.getRequestDispatcher("Day1/Asgm5.jsp").forward(request, response);
     }
 
 }

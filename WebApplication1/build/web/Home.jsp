@@ -22,16 +22,16 @@
             <p><a href="SolutionDay1?asgm=1" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                     1. Area Under Curves and Volume of Revolving a Curve
                 </a></p>
-            <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            <p><a href="SolutionDay1?asgm=2" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                     2. String Reductions
                 </a></p>
-            <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            <p><a href="SolutionDay1?asgm=3" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                     3. Super Digit
                 </a></p>
-            <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            <p><a href="SolutionDay1?asgm=4" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                     4. Pascals Triangle
                 </a></p>
-            <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            <p><a href="SolutionDay1?asgm=5" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                     5. Sequence Full Of Colors
                 </a></p>
 
