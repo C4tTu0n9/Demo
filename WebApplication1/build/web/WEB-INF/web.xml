@@ -4,8 +4,24 @@
         <servlet-name>homeServlet</servlet-name>
         <servlet-class>controller.homeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SolutionDay1</servlet-name>
+        <servlet-class>controller.Day1.SolutionDay1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SolutionDay13</servlet-name>
+        <servlet-class>controller.Day13.SolutionDay13</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>homeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SolutionDay1</servlet-name>
+        <url-pattern>/SolutionDay1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SolutionDay13</servlet-name>
+        <url-pattern>/SolutionDay13</url-pattern>
     </servlet-mapping>
 </web-app>
