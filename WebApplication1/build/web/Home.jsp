@@ -39,12 +39,40 @@
 
         <button class="accordion">Day 2</button>
         <div class="panel">
-            <p></p>
+            <p><a href="SolutionDay2?asgm=1" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    1. Strange Grid Again
+                </a></p>
+            <p><a href="SolutionDay2?asgm=2" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    2. Handshake
+                </a></p>
+            <p><a href="SolutionDay2?asgm=3" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    3. Special Multiple
+                </a></p>
+            <p><a href="SolutionDay2?asgm=4" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    4. Summing the N series
+                </a></p>
+            <p><a href="SolutionDay2?asgm=5" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    5. Bus Station
+                </a></p>
         </div>
 
         <button class="accordion">Day 3</button>
         <div class="panel">
-            <p></p>
+            <p><a href="SolutionDay3?asgm=1" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    1. Java If-Else
+                </a></p>
+            <p><a href="SolutionDay3?asgm=2" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    2. Java Loops II
+                </a></p>
+            <p><a href="SolutionDay3?asgm=3" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    3. Java Loops I
+                </a></p>
+            <p><a href="SolutionDay3?asgm=4" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    4. Java Substring
+                </a></p>
+            <p><a href="SolutionDay3?asgm=5" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    5. Java String Reverse
+                </a></p>        
         </div>
 
         <button class="accordion">Day 4</button>

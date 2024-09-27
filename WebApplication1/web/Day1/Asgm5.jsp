@@ -17,18 +17,7 @@
         <link rel="stylesheet" href="css/mystyle.css"/>
     </head>
     <body>
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-
-        <!-- Nút để ẩn/hiện menu -->
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <a href="home" class="link-light link-offset-2 link-underline-opacity-25" style="font-size:30px;cursor:pointer" onclick="openNav()">Menu</a>
 
         <div class="split resizable">
             <!-- Left Pane: Problem Description -->
@@ -64,15 +53,15 @@
         <!-- Link Bootstrap JS (Optional) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script>
-            // Toggle thanh menu ẩn hiện
-            document.getElementById('menu-toggle').onclick = function () {
-                var menu = document.getElementById('menu');
-                if (menu.style.left === '0px') {
-                    menu.style.left = '-250px';
-                } else {
-                    menu.style.left = '0px';
-                }
-            };
+                   // Toggle thanh menu ẩn hiện
+                   document.getElementById('menu-toggle').onclick = function () {
+                       var menu = document.getElementById('menu');
+                       if (menu.style.left === '0px') {
+                           menu.style.left = '-250px';
+                       } else {
+                           menu.style.left = '0px';
+                       }
+                   };
 
         </script>
 

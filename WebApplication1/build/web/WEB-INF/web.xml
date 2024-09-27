@@ -12,6 +12,14 @@
         <servlet-name>SolutionDay13</servlet-name>
         <servlet-class>controller.Day13.SolutionDay13</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SolutionDay2</servlet-name>
+        <servlet-class>controller.Day2.SolutionDay2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SolutionDay3</servlet-name>
+        <servlet-class>controller.Day3.SolutionDay3</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>homeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -23,5 +31,13 @@
     <servlet-mapping>
         <servlet-name>SolutionDay13</servlet-name>
         <url-pattern>/SolutionDay13</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SolutionDay2</servlet-name>
+        <url-pattern>/SolutionDay2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SolutionDay3</servlet-name>
+        <url-pattern>/SolutionDay3</url-pattern>
     </servlet-mapping>
 </web-app>

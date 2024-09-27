@@ -17,18 +17,9 @@
         <link rel="stylesheet" href="css/mystyle.css"/>
     </head>
     <body>
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
 
         <!-- Nút để ẩn/hiện menu -->
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <a href="home" class="link-light link-offset-2 link-underline-opacity-25" style="font-size:30px;cursor:pointer" onclick="openNav()">Menu</a>
 
         <div class="split resizable">
             <!-- Left Pane: Problem Description -->
@@ -66,8 +57,8 @@
                         <c:if test="${V == null || S == null} ">
                             Empty
                         </c:if>
-                            <p>V: ${V}</p>
-                            <p>S: ${S}</p>
+                        <p>V: ${V}</p>
+                        <p>S: ${S}</p>
                     </div>
                 </div>
             </div>
