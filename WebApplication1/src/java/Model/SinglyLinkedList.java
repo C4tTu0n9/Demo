@@ -26,16 +26,17 @@ public class SinglyLinkedList {
         }
         tail.next = newNode;
         tail = newNode;
-        return;
     }
 
-    public static void printSinglyLinkedList(SinglyLinkedListNode node) {
+    public static String printSinglyLinkedList(SinglyLinkedListNode node) {
+        String rs = "";
         while (node != null) {
-            System.out.print(node.data);
+            rs += node.data;
             node = node.next;
             if (node != null) {
-                System.out.print("->");
+                rs += "->";
             }
         }
+        return rs;
     }
 }
